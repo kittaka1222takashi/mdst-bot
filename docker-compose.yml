@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webserver:
+    build: ./
+    image: python-flask-line:1.0
+    container_name: mdst-bot
+    tty: true
+    volumes:
+      - ./:/app
+        # ports:
+        #   - "8080:5000"
